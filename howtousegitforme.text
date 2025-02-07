@@ -1,0 +1,41 @@
+1.#เอาไฟล์ใส่ staging area
+  git add .
+2.#เอาไฟล์ใส่ใน commit area
+  git commit -m "llll"
+3.#เช็คสถานะ
+  git status
+4.#เช็คlog ทำอะไรบ้าง
+  git log
+5.#เช็คลอคแบบบรรทัดเดียว 
+  git log--oneline
+6.#เช็คว่าแตกต่างอย่างไร
+  git diff เลขcommitแรก เลขcommitอันสอง
+7.#เอาไฟล์ออกจาก staging area
+  git reset ชื่อไฟล์
+8.#ย้อนเวอร์ชั่นหลังเลขcommitที่ระบุ จาก commit ไป staging
+  git reset --soft เลขcommit 
+9.#ย้อนเวอร์ชั่นหลังเลขcommitที่ระบุ จาก commit ไปยัง working area
+  git reset --mixed เลขcommit 
+10.#ย้อนเวอร์ชั่นหลังเลขcommitที่ระบุ จาก commit และทำลายไฟล์ด้วย
+  git reset --hard เลขcommit 
+
+
+    Branch
+1.#เพิ่มbranch
+  git checkout -b ชื่อbranch
+2.#ลบbranch
+  git checkout -d ชือbranch
+3.#รวมกัน
+  git merge branchที่อยากรวม
+
+    push ข้อมูล
+**สามารดูใน git hub ได้
+git branch -M main
+git remote add origin ชื่อrepoของgitที่สร้างในเว็ป
+git push -u origin main
+
+    pull เอาข้อมูลจากserverหรือเว็ปมาในคอม
+git pull
+
+    อยากได้ไฟล์
+เลือกที่จะเก็บ ---> git clone
